@@ -1,0 +1,65 @@
+
+		#wrapper{width: 1200px;max-width: 1700px; background-color : rgb(0, 191, 255);  border: 1px solid silver; 
+		margin: auto; padding: 0;font-size: 23px;
+	}
+	#header{padding: 15px; background-color: 	rgb(10, 164, 12);  color: rgb(255, 0, 64); }
+		
+	#leftAside{float: left; background-color: #808080; width: 200px; boder: relative;}
+	
+	#rightAside{float: right; width: 200px; background-color: #808080;}
+	
+	#main{background-color: white; 	float: left; width: 800px;	position: relative;}
+	
+	h1{text-align: center; font-family: "Arial Black", Gadget, sans-serif ; color: olive;  cursor: pointer;  }
+	
+	h3{text-align: left; font-family: "Courier New", Courier, mono; color: green; text-decoration: underline;}
+	
+	#footer{clear: both; background-color: rgb(220, 250, 250); margin : auto; padding: 1px; }
+			
+	#nav ul{list-style: none;	margin: 0; padding: 0px; background-color: tan;}
+
+	#nav {background-color: LightYellow; color: orange; margin: 0 200px 0 200px; width:100%; display: block;  margin: 15px;}
+
+	#nav a{color: Crimson; margin: 1px; font-weight:bold; width: 13%;  float : left; }
+
+	#nav a:hover { background-color: blue; color: Thistle;text-decoration: underline;}
+	
+	#leftAside2{font-size: 14px; float: left; width: 30px; position: absolute; top: 20px; left: 20px; boder: relative; background-color: pink; display: block; }
+	
+	#rightAside2{font-size: 14px; float: right; width: 30px; position: absolute; top: 20px; right: 20px; boder: relative; background-color: green; display: block;z-index: 9999;}
+	
+	*{font-size: 25px;}
+	.{text-align: center}
+	#code1{color: LightCoral;}
+	 table, td {border: 1px solid black;}
+	#leftAside2{font-size: 14px; float: left; width: 30px; position: absolute; top: 20px; left: 20px; boder: relative; background-color: pink; display: block;}
+	
+	
+	#rightAside2{font-size: 14px; float: right; width: 30px; position: absolute; top: 20px; right: 20px; boder: relative; background-color: pink; display: block;}
+	
+	#chapter2{display: none;}
+	
+	#myImage{height : 160px; cursor: pointer; }
+
+	@media screen and (max-width: 1200px){
+		#header{width: 100%;}
+		#wrapper{width: 100%;margin: 0;}
+	}
+	@media screen and (max-width: 850px){
+		#header{margin-top: 50px;}
+		#wrapper{margin: 0; }
+		#leftAside{display: none; }
+		#main{margin: 0; width: 70%; }
+		#rightAside{width: 30%;}		
+		#nav a{width: 15%;}
+	}
+	@media screen and (max-width: 500px){
+		#rightAside{display: none; }
+		#header{width: 100%;}
+		#leftAside{display: none;}
+		#wrapper{width: 100%;}
+		#main{width: 100%;}
+		
+		#nav a{width: 22%;}
+	}
+	

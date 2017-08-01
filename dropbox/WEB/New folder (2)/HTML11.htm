@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>HTML11 CSS Wireframe</title>
+ <!-- ***************************************************************
+  *                                                                 *
+  * FILE NAME: index.htm                                            *
+  * FOLDER NAME(s): Desktop/HTML11 CSS Wireframe                    *
+  * AUTHOR: Stefan Weissenmayer                                     *
+  * DATE: 07/07/2017                                                *
+  * REV: 1                                                          *
+  * DESCRIPTION:                                                    *
+  * CSS Wireframe for fixed web layout exercise.                    *
+  *                                                                 *
+  ******************************************************************* -->
+  <style type="text/css">
+	/*  This is an example of wireframe. 
+		We make use of the '#' as required for 'ID' type selectors. See your
+		HTML12 exercise for more details about these type of selectors.
+		We temporarily apply different background colours for each of our
+		layout boxes. These colours will be removed once we are happy with
+		our wire frames.  */ 
+	
+  * {
+	/*  This CSS rule set removes all default margins and paddings 
+		by setting the values for both to zero. The asterix is used as a
+		wildcard to select all possible selector types.  */
+	
+	margin-top: 0;
+	padding-top: 0;
+  }
+
+  #wrapper {		
+	/*  The wrapper div wraps around our complete web layout. The 'auto'
+		value as margin centers the content within the browser window.  */
+	background-color: silver;
+	width: 1200px;
+	margin: auto;
+	margin-top: 0;
+	
+  }
+
+  #header {		
+    background-color: green;
+	width: 100%;	
+  }
+
+  #nav {		
+    background-color: orange;
+	width: 210px;
+	float: left;
+  }
+  
+  #aside {		
+    background-color: blue;
+	width: 170px;
+	float: right;
+  }
+
+  #article {		
+    background-color: white;
+	margin: 0 170px 0 210px;
+  }
+
+  #footer {		
+    background-color: yellow;
+	margin: 0 170px 0 210px;
+  }
+	
+	#nav ul{list-style: none;}
+	#nav a{display: block; border: 2px solid brown; background-color: yellow; margin: 0px; 
+				font-weight: bold; text-decoration: none; text-align: center;font-family: Verdana, Arial, Helvetica, sans-serif;padding: 0px;
+				border-radius: 12px;
+				}
+	#footer a: hover{background-color: #8b4513; color: blue; text-decoration: underline;}
+	
+	
+	
+		#footer ul{list-style: none;}
+	#footer a{width: 31%;  float: left;  display: block; border: 2px solid brown; background-color: yellow; margin: 0px; 
+				font-weight: bold; text-decoration: none; text-align: center;font-family: Verdana, Arial, Helvetica, sans-serif;padding: 0px;
+				border-radius: 12px;
+				}
+	#footer a: hover{background-color: #8b4513; color: blue; text-decoration: underline;}
+	
+	
+  </style>
+  </head>
+  <body>
+  <div id="wrapper">
+    <div id="header">
+      HEADER
+    </div>
+    <div id="nav">
+      NAVIGATION
+	  <ul>
+		<li><a href='#' title='Home Page'>HOME</li>
+		<li><a href='#' title='Drink Information'>Drink</li>
+		<li><a href='#' title='Buy your coffee'>Buy</li>
+	  </ul>
+	  
+	  
+	  
+    </div>
+    <div id="aside">
+      GOOGLE ADS
+    </div>
+    <div id="article">
+      MAIN SECTION WITH ARTICLE<br>
+	  I haven't entered any values for height as the div heights will be
+	  determined by content placed within the divs. If possible at all,
+	  try to avoid setting heights in CSS.
+    </div>
+    <div id="footer">
+     
+	    <ul>
+		<li><a href='#' title='Home Page'>HOME</li>
+		<li><a href='#' title='Drink Information'>Drink</li>
+		<li><a href='#' title='Buy your coffee'>Buy</li>
+	  </ul>
+    </div>
+	WRAPPER
+  </div>
+  </body>
+</html>

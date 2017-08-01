@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+
+<head>
+
+<!---	
+	<style>
+		#wrapper{width: 1200px;max-width: 1700px; background-color : rgb(0, 191, 255);  border: 1px solid silver; 
+		margin: auto; padding: 0;font-size: 23px;
+	}
+	#header{padding: 15px; background-color: 	rgb(0, 64, 255);  color: rgb(255, 0, 64);}
+		
+	#leftAside{float: left; background-color: #808080; width: 200px; boder: relative;}
+	
+	#rightAside{float: right; width: 200px; background-color: #808080;}
+	
+	#main{background-color: white; 	float: left; width: 800px;	position: relative;}
+	
+	h1{text-align: center; font-family: "Arial Black", Gadget, sans-serif ; color: olive;}
+	
+	h3{text-align: left; font-family: "Courier New", Courier, mono; color: green; text-decoration: underline;}
+	
+	#footer{clear: both; background-color: rgb(220, 250, 250); margin : auto; padding: 1px; }
+			
+	#nav ul{list-style: none;	margin: 0; padding: 0px; background-color: tan;}
+
+	#nav {background-color: LightYellow; color: orange; margin: 0 200px 0 200px; width:100%; display: block;  margin: 15px;}
+
+	#nav a{color: Crimson; margin: 1px; font-weight:bold; width: 13%;  float : left; }
+
+	#nav a:hover { background-color: blue; color: Thistle;text-decoration: underline;}
+	
+	#leftAside2{font-size: 14px; float: left; width: 30px; position: absolute; top: 20px; left: 20px; boder: relative; background-color: pink; display: block; }
+	
+	#rightAside2{font-size: 14px; float: right; width: 30px; position: absolute; top: 20px; right: 20px; boder: relative; background-color: green; display: block;z-index: 9999;}
+	
+	*{font-size: 25px;}
+	.{text-align: center}
+	#code1{color: LightCoral;}
+	 table, td {border: 1px solid black;}
+	#leftAside2{font-size: 14px; float: left; width: 30px; position: absolute; top: 20px; left: 20px; boder: relative; background-color: pink; display: block;}
+	
+	
+	
+	#rightAside2{font-size: 14px; float: right; width: 30px; position: absolute; top: 20px; right: 20px; boder: relative; background-color: pink; display: block;}
+	
+	#chapter2{display: none;}
+	
+
+	
+	</style>
+---->
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	
+	
+	<script src="scripts/script.js"></script>
+</head>
+
+<body>
+	<div id = "wrapper">
+		<div id = "header">		
+					
+	
+			<!--		<h1 >LEARN A LANGUAGE</h1>		<h1 >LEARN A LANGUAGE</h1> --->
+			<img id="myImage" cursor: pointer;  onclick="homePage();"  src="images/logo1.png" width = "200px" >
+		
+	</div>
+				
+		
+		<div id = "leftAside">
+			Hello
+			HelloHello
+			Hello
+			<br/>
+			hey there
+		</div>
+		
+		<div id = "rightAside">
+			
+			<a class="twitter-timeline" data-height="700" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/w3c">Tweets by w3c</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		<div id="nav">
+			<ul>
+				<li><a href='index.html' title='Home Page'>HOME</a></li>
+				<li><a href='java.htm' title='Learn Java'>JAVA</a></li>
+				<li><a href='myhtml.htm' title='Learn HTML'>HTML</a></li>
+				<li><a href='sql.htm' title='Learn SQL'>SQL</a></li>
+				<li><a href='contact.htm' title='Contact Us'>CONTACT US</a></li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id = "main">
+		<article>
+		
+		
+	
+		<button id = "leftAside2" onclick="prevChapter();">
+				&nbsp;&nbsp;< </button>
+						
+			<br/>
+			<button id = "rightAside2" onclick="nextChapter();">
+				&nbsp;&nbsp;&nbsp;> </button>
+						
+			<br/>
+		
+		
+		
+		
+		
+		
+		
+		<div id="chapter1"    >
+			  <h1>CHAPTER 1</h1>
+			<p>SQL uses a DML(Data Manipulation Language),
+			DDL(Data Definition Language) and 
+			DCM(Data Control Language).
+			DDL commands are used for defining data structures. 
+				DML commands can be used for data manipulation
+			</p>
+			<p>In this chapter we will focus mainly on DDL commands. They include create, alter, drop and truncate.
+			</p>
+			
+			
+			<ol>
+			<li>Create: It can be used to create a database objects such as a tables, stored procedures, views, triggers, e.t.c</li>			
+			<li>Alter: It can be used to make changes to the structure of a databse object. </li>
+			<li>Drop: It can be used to delete an object from a database.</li>
+			<li>Truncate: It can be used to empty a table. All allocated spaces will be removed but the structure of the table will remain.</li>
+			
+		</ol>
+			
+			<p>The following can be used to write DDL statements: </p>	  
+		  	<li>
+			<code>CREATE TABLE table_name(col1 datatype, col2 datatype);</code>				
+			</li>
+			
+			<li>
+			<code>ALTER TABLE table_name DROP COLUMN col1;</code>				
+			</li>
+			
+			<li>
+			<code>DROP TABLE table1;</code>				
+			</li>
+		
+			<li>
+			<code>TRUNCATE TABLE table_name;</code>				
+			</li>
+		
+		</ol>
+		  
+		
+		  
+		  
+		  
+		  
+		  
+		  
+				
+	</div>
+	
+	<div id="chapter2">
+		<h1>CHAPTER 2: DML</h1>
+		<p>In this chapter, I will introduce you to some SQL's DML statements. DML stands for Data Manipulation Language.
+			They are used for modify data. They can be used to make changes to existing data such as adding or deleting data.
+		</p>
+		<ol>
+			<li>Update:  It's used to modify existing rows. You can update one row at a time.</li>			
+			<li>Delete: The delete command is to delete one or more rows from a table.</li>
+			<li>Insert: It can be used to add new rows to an existing table.</li>
+			<li>Select: It can be used to retrieve rows from a table.</li>
+			<li>Merge: It can be used to perform multiple DML operations.</li>
+		</ol>			
+		
+		<p>The following are some examples of DML statements.</p>
+		<ol>			
+			<li>
+			<code>SELECT * FROM table1</code>				
+			</li>
+			
+			<li>
+			<code>UPDATE table1 SET col1 = 4 WHERE ID = 5;</code>				
+			</li>
+			
+			<li>
+			<code>INSERT INTO table1(col1, col2) VALUES(4, 6);</code>				
+			</li>
+		
+			<li>
+			<code>DELETE FROM table1 WHERE ID = 1;</code>				
+			</li>
+		
+		</ol>
+	
+	
+	
+	
+	</div>
+	
+	
+	</div>
+	
+	</article>
+		
+		
+		
+			<div id = "footer">
+			<a href='about.htm' title='About'>About</a>
+			<p>welcome to the Learn a Language. Enjoy your learning experience and feel free to drop a comment today. </p>
+		</div>
+	
+	
+	</div>
+	
+	
+	
+	
+</html>
+
+ <!----
+  <body>
+  
+  <h1>CHAPTER 1</h1>
+  <p>SQL uses a DML(Data Manipulation Language),
+  DDL(Data Definition Language) and 
+  DCM(Data Control Language).
+  DDL commands are used for defining data structures. 
+  DML commands can be used for data manipulation
+  </p>
+  <p>In this chapter we will focus mainly on the DDL.
+	DDL commands include create, alter, drop and truncate.
+  </p>
+  <code>
+  	CREATE TABLE table_name(column1 datatype, column2 datatype);
+</code>
+  
+  </body>
+  --->
+ 

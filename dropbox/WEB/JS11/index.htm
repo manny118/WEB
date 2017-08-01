@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>My Web Page</title>
+	
+	<!-- 
+	FILE NAME: html5-draft-template.htm *
+	FOLDER NAME(S): html003 *
+	AUTHOR: Emmanuel 
+	DATE: 17/07/17
+	DESCRIPTION: *
+	JS CANVAS ELEMENT * 
+	-->
+		<script src="scripts/script.js"></script>
+		<style>
+		canvas{position: absolute; border: 1px solid black; background-color: #ccff99; z-index: 1;}
+		#wrapper{/*width: 996px; */ margin: 20px; background-color: #ffffff;}
+		#innerWrapper{z-index: 2;position: absolute;width:100%;}
+		body{background-color: #cccc99;}
+		</style>
+	</head>
+
+	<body id="pageBody" onresize="resizeBubbles('innerWrapper', 'bubblesBg');">
+	
+	<div id= "wrapper" >
+		<canvas id="bubblesBg" height="400" width="400"></canvas>
+		<div id="innerWrapper"></div>
+
+	</div>
+	
+	</body>
+	<script>startBubbles("wrapper", "bubblesBg", 50);</script>
+</html>

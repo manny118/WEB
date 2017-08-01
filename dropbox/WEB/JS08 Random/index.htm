@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>My Web Page</title>
+	
+	<!-- 
+	FILE NAME: html5-draft-template.htm *
+	FOLDER NAME(S): html003 *
+	AUTHOR: Emmanuel 
+	DATE: 14/07/17
+	DESCRIPTION: *
+	JS RANDOM NUMBERS * 
+	-->
+		<script src="scripts/script.js"></script>
+
+		<style>
+		.divStyle{background-color: aqua; border: 2px dashed navy;}
+		</style>
+	</head>
+
+	<body>
+	<div id="wrapper">
+	
+	<h1 >Random Number</h1>
+	<p>A no btwn 0 and 10, generated at random:
+		<script>document.write(randomNum());</script>
+		<br>Refresh
+	</p>
+	
+	<h1>Interval</h1>
+	<p>
+	A no btwn 0 and 10, generated at random and updated every 2 seconds
+	<span id="randomNumber"></span>
+	</p>
+	
+	
+	</div>
+	<script>randomNum();</script>
+	
+	
+	</body>
+	
+</html>

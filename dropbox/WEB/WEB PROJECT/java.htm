@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+
+<head>
+
+<!--	
+	<style>
+		#wrapper{width: 1200px;max-width: 1700px; background-color : rgb(0, 191, 255);  border: 1px solid silver; 
+		margin: auto; padding: 0;font-size: 23px;
+	}
+	#header{padding: 15px; background-color: 	rgb(0, 64, 255);  color: rgb(255, 0, 64);}
+		
+	#leftAside{float: left; background-color: #808080; width: 200px; boder: relative;}
+	
+	#rightAside{float: right; width: 200px; background-color: #808080;}
+	
+	#main{background-color: white; 	float: left; width: 800px;	position: relative;}
+	
+	h1{text-align: center; font-family: "Arial Black", Gadget, sans-serif ; color: olive;}
+	
+	h3{text-align: left; font-family: "Courier New", Courier, mono; color: green; text-decoration: underline;}
+	
+	#footer{clear: both; background-color: rgb(220, 250, 250); margin : auto; padding: 1px; }
+			
+	#nav ul{list-style: none;	margin: 0; padding: 0px; background-color: tan;}
+
+	#nav {background-color: LightYellow; color: orange; margin: 0 200px 0 200px; width:100%; display: block;  margin: 15px;}
+
+	#nav a{color: Crimson; margin: 1px; font-weight:bold; width: 13%;  float : left; }
+
+	#nav a:hover { background-color: blue; color: Thistle;text-decoration: underline;}
+	
+	#leftAside2{font-size: 14px; float: left; width: 30px; position: absolute; top: 20px; left: 20px; boder: relative; background-color: pink; display: block; }
+	
+	#rightAside2{font-size: 14px; float: right; width: 30px; position: absolute; top: 20px; right: 20px; boder: relative; background-color: green; display: block;z-index: 9999;}
+	
+	*{font-size: 25px;}
+	.{text-align: center}
+	#code1{color: LightCoral;}
+	 table, td {border: 1px solid black;}
+	#leftAside2{font-size: 14px; float: left; width: 30px; position: absolute; top: 20px; left: 20px; boder: relative; background-color: pink; display: block;}
+	
+	
+	#rightAside2{font-size: 14px; float: right; width: 30px; position: absolute; top: 20px; right: 20px; boder: relative; background-color: pink; display: block;}
+	
+	#chapter2{display: none;}
+	
+
+	@media screen and (max-width: 1200px){
+		#header{width: 100%;}
+		#wrapper{width: 100%;margin: 0;}
+	}
+	@media screen and (max-width: 850px){
+		#header{margin-top: 50px;}
+		#wrapper{margin: 0; }
+		#leftAside{display: none; }
+		#main{margin: 0; width: 70%; padding: 18px;}
+		
+	}
+	@media screen and (max-width: 500px){
+		#rightAside{width: 100%; }
+		#header{width: 100%;}
+		#leftAside{display: none;}
+		#wrapper{width: 100%;}
+		#main{width: 100%;}
+		#nav{width: 100%;}
+	}
+	
+	</style>
+--->
+	<link rel ="stylesheet"  type="text/css"  href="css/mystyle.css">
+	<script src="scripts/script.js"></script>
+</head>
+
+<body   >  
+
+
+	<div id = "wrapper">
+		<div id = "header">	
+		
+					
+			
+			<!--		<h1 >LEARN A LANGUAGE</h1>		<h1  onclick="homePage()" >LEARN A LANGUAGE</h1> --->
+			<img id="myImage" cursor: pointer;  onclick="homePage();"  src="images/logo1.png" width = "200px" >
+		
+			
+		</div>
+				
+		
+		<div id = "leftAside">
+			Hello
+			HelloHello
+			Hello
+			<br/>
+			hey there
+		</div>
+		
+		<div id = "rightAside">
+			
+			<a class="twitter-timeline" data-height="700" data-link-color="#FAB81E" href="https://twitter.com/Oracle">Tweets by Oracle</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			
+		
+		</div>
+		
+		
+		
+		
+		
+		<div id="nav">
+			<ul>
+				<li ><a id="home" href='index.html' title='Home Page'>HOME</a></li>
+				<li><a href='java.htm' title='Learn Java'>JAVA</a></li>
+				<li><a href='myhtml.htm' title='Learn HTML'>HTML</a></li>
+				<li><a href='sql.htm' title='Learn SQL'>SQL</a></li>
+				<li><a href='contact.htm' title='Contact Us'>CONTACT US</a></li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id = "main">
+		<article>
+		
+		
+	
+		<button id = "leftAside2" onclick="prevChapter();">
+				&nbsp;&nbsp;&nbsp;< </button>
+						
+			<br/>
+			<button id = "rightAside2" onclick="nextChapter();">
+				&nbsp;&nbsp;&nbsp;> </button>
+						
+			<br/>
+		
+		
+		
+		
+		
+		
+		
+		<div id="chapter1"   >
+				<h1>CHAPTER 1: JAVA BASICS</h1>
+					<p>
+				I hope you ready and excited to write your first java code. 
+				Create a java class and type the following: 
+						
+				</p>
+		
+				<code id = "code1">
+				public class Exercise1 {
+				<br/>
+				&nbsp;	public static void main(String[] args) {
+				<br/>
+				&nbsp;&nbsp;	System.out.println("Hello World");
+				<br/>			
+				&nbsp;&nbsp;}
+				<br/>
+				}
+
+				</code>
+				<p>Here, my class is called 'Exercise1'.</p>
+				<p>Please ensure you type the syntax correctly.
+					Do not forget to end the line with a semicolon.
+					The console should display <b>"Hello World"</b>.
+				</p>
+				
+				<p>
+				<b>System.out.println </b> is used to print to console.	
+				</p>
+				
+					<p>In java, classes are the building blocks we use to write our programs. 
+						A class is a template which is used to create an object. That brings us to the concept of objects.
+					An object is a template of a class. We can create as many templates as we want from a class.
+					</p>
+	</div>
+	
+	<div id="chapter2">
+		<h1>CHAPTER 2: Data Types in Java</h1>
+			
+					
+				<table id = "t1">
+					<thead>
+					<tr>
+						<th>Data Type</th>
+						<th>Explanation<th>
+					<tr>
+					</thead>
+					
+					<tbody>
+					<tr>
+						<td>Integer
+						</td>
+						<td>It is a 32-bit data type.
+						</td>
+					</tr>
+					
+					<tr>
+						<td>String
+						</td>
+						<td>The string datatype is one of the most used data types in Java
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Boolean
+						</td>
+						<td>It can be used to store a true or false value which is a 0 or 1 bit.
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Character
+						</td>
+						<td>It can be used to store a single character or symbol.
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Double
+						</td>
+						<td>This is a 64-bit data type. It is the default type for decimal numbers.
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Float
+						</td>
+						<td>This is a 32-bit data type which can be used for storing floating points.
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				
+				<code id = "code1">
+				<br/>	
+					public class Exercise2 {
+				<br/>
+				
+				&nbsp;	public static void main(String[] args) {
+				<br/>			
+				&nbsp;&nbsp;				int num1  = 7;
+				<br/>		
+				&nbsp;&nbsp;			double num2 = 1217.44d;
+				<br/>			
+				&nbsp;&nbsp;				float num3  = 12.23f;
+					<br/>	
+				&nbsp;&nbsp;				String word = "learn a language";
+				<br/>		
+				&nbsp;&nbsp;		char letter = '@';
+				<br/>			
+				&nbsp;&nbsp;			boolean guess = true; 
+				<br/>				
+				&nbsp;			}	&nbsp;<br/>
+				}
+				
+				</code>
+				<p> </p>
+	</div>
+	
+	
+	</div>
+	
+	</article>
+		
+		
+		
+		
+		<div id = "footer">
+			<a href='about.htm' title='About'>About</a>
+			<p>Welcome to the Learn a Language. 
+			<br/>Enjoy your learning experience and feel free to drop a comment <a href='contact.htm' title='Contact Us'>here</a> today. </p>
+		</div>
+	
+	
+	</div>
+	
+	
+	
+	
+	
+	
+<!----	
+	
+	<h1>CHAPTER 1: JAVA BASICS</h1>
+	<p>
+		I hope you ready and excited to write your first java code. 
+		Create a java class and type the following: 
+					
+	</p>
+	
+	<code id = "code1">
+	public class Exercise1 {
+	<br/>
+	&nbsp;	public static void main(String[] args) {
+	<br/>
+	&nbsp;&nbsp;	System.out.println("Hello World");
+	<br/>			
+		&nbsp;&nbsp;}
+	<br/>
+	}
+
+		
+	</code>
+	
+	<p>Please ensure you type the syntax correctly.
+		Do not forget to end the line with a semicolon.
+		The console should display <b>"Hello World"</b>.
+	</p>
+	
+	<p>
+	<b>System.out.println();</b> is used to print to console.	
+	</p>
+	
+	<p>In java, classes are the building blocks we use to write our programs. 
+		A class is a template which is used to create an object. That brings us to the concept of objects.
+		An object is a template of a class. We can create as many templates as we want from a class.
+	</p>
+
+	<h2>Data Types in Java<h3>
+		
+	<table id = "t1">
+		<thead>
+		<tr>
+			<th>Data Type</th>
+			<th>Explanation<th>
+		<tr>
+		</thead>
+		
+		<tbody>
+		<tr>
+			<td>Integer
+			</td>
+			<td>It is a 32-bit data type.
+			</td>
+		</tr>
+		
+		<tr>
+			<td>String
+			</td>
+			<td>The string datatype is one of the most used data types in Java
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Boolean
+			</td>
+			<td>It can be used to store a true or false value which is a 0 or 1 bit.
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Character
+			</td>
+			<td>It can be used to store a single character or symbol.
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Double
+			</td>
+			<td>This is a 64-bit data type. It is the default type for decimal numbers.
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Float
+			</td>
+			<td>This is a 32-bit data type which can be used for storing floating points.
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	
+</body>
+----->
+
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Table Demo</title>
+ <!-- ***************************************************************
+  *                                                                 *
+  * FILE NAME: html5-template.htm                                   *
+  * FOLDER NAME(s): Desktop/practicefolder                          *
+  * AUTHOR: Stefan Weissenmayer                                     *
+  * DATE: 05/07/2017                                                *
+  * REV: 1                                                          *
+  * DESCRIPTION:                                                    *
+  * HTML TABLE exercises.                                           *
+  *                                                                 *
+  ******************************************************************* -->
+  <style type="text/css">
+
+  /* This is a style element that we haven't covered yet.
+     Please just copy "as is", we'll learn more about it 
+	 when we cover CSS */
+
+	 table, td {border: 1px solid blue;}
+  </style>
+  </head>
+  <body>
+  <h1>HTML Tables</h1>
+  <h2>Basic Table</h2>
+  <p>The most simple table with 2 columns and 2 rows you'll ever create.</p>
+  <table>
+  <tr>
+	  <td>Monday</td>
+	  <td>HTML5 Template</td>
+	  <td>Created template</td>
+	</tr>
+    <tr>
+	  <td>Tuesday</td>
+	  <td>HTML Elements</td>
+	  <td>Created a HTML page with a proposal for our Webdesign project.</td>
+	</tr>
+	</table>
+  
+  <h2>Basic Table with Header</h2>
+  <p>Below is the most common table format with one row for a table
+     header and additional rows for table data. Note that using the
+	 th element helps accessibility, and it also makes it easier to
+	 style the table header differently to the table data.</p>
+  <table>
+    <tr>
+	  <th>DAY</th>
+	  <th>SUBJECT</th>
+	  <th>EXERCISE</th>
+	</tr>
+    <tr>
+	  <td>Monday</td>
+	  <td>HTML5 Template</td>
+	  <td>Created template</td>
+	</tr>
+    <tr>
+	  <td>Tuesday</td>
+	  <td>HTML Elements</td>
+	  <td>Created a HTML page with a proposal for our Webdesign project.</td>
+	</tr>
+  </table>
+
+  <h2>Table with &lt;thead>,&lt;tbody> and &lt;tfoot>,</h2>
+  <p>Use the &lt;thead>,&lt;tbody> and &lt;tfoot> elements for large
+     tables that may include a scroll bar or extend over several 
+	 print pages.</p>
+  <p>Note the nesting order of the &lt;thead>,&lt;tbody> and &lt;tfoot> 
+     elements. In the past the &lt;tfoot> element was placed between
+     the &lt;thead>,&lt;tbody> elements. See 
+     <a href="https://www.w3schools.com/tags/tag_thead.asp">W3SCHOOLS</a>
+     for an example of the 'old' way example as found on the 05/07/2017.
+	 Now the correct nesting order is &lt;thead>,&lt;tbody> and &lt;tfoot>.
+	 The new order will somehow make it easier to code tables dynamically.	 
+  </p>
+  <p>As we noticed today (05/07/2017), the old way as stated on
+     W3Schools and the new way will both render correctly in the 
+	 browser. However, only the new way will pass the W3C validation 
+	 test.
+  </p>
+  <table>
+    <thead>
+      <tr>
+	    <th>DAY</th>
+	    <th>SUBJECT</th>
+	    <th>EXERCISE</th>
+	  </tr>
+	</thead>
+	<tbody>
+      <tr>
+	    <td>Monday</td>
+	    <td>HTML5 Template</td>
+	    <td>Created template</td>
+	  </tr>
+      <tr>
+	    <td>Tuesday</td>
+	    <td>HTML Elements</td>
+	    <td>Created a HTML page with a proposal for our Webdesign project.</td>
+	  </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+	    <td>DAY (FOOTER)</td>
+	    <td>SUBJECT (FOOTER)</td>
+	    <td>EXERCISE (FOOTER)</td>
+	  </tr>
+	</tfoot>
+  </table>
+  </body>
+</html>
